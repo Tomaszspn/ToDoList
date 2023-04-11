@@ -1,36 +1,34 @@
 {
     const tasks = [
         {
-            content: "nagrać lekcje",
+            content: "Nagrać lekcje",
             done: false,
         },
         {
-            content: "zjeśc pierogi",
+            content: "zjeść pierogi",
             done: true,
-
         },
     ];
 
     const render = () => {
-        let htmlString = " ";
+        let htmlString = "";
 
-        for (const task of tasks) {
-            htmlString += `
-            <li>
-                ${task.content}
-                </li>
-                `
-        }
-
-        document.querySelector(".js-listTasks").innerHTML = htmlString;
-    };
-
-
+for(const task of tasks){
+htmlString += `
+<li>
+${task.content}
+</li>
+`;
+}
+document.querySelector(".js-tasks").innerHTML = htmlString;
+    }
 
 
     const init = () => {
-        render();
-    };
+    render();
+    }
+    
 
     init();
+
 }
