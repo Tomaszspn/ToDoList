@@ -1,18 +1,33 @@
 .form {
-margin: 10px 10px;
-border: 10px solid crimson;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
 }
 
-.task__button-remove {
-    background-color: rgb(230, 43, 43);
-    transition: 3s;
-}
-.task__button-done {
-    background-color: rgb(14, 204, 14);
+@media (max-width: 767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }
 
-.task__buttons {
-    color: azure;
-    width: 50px;
-    height: 50px;
+.form__input {
+    border: 2px solid #ddd;
+    padding: 10px;
+}
+
+.form__button {
+    background-color: hsl(180, 100%, 25%);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    background: hsl(180, 99%, 30%)
+}
+
+.form__button:active {
+    background: hsl(180, 100%, 35%);
+    border: 1px solid black;
 }
