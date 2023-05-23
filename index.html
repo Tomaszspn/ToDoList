@@ -11,20 +11,42 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 
 
 
 </head>
 
-<body>
-<h1>Lista zadań</h1>
-    <form class="js-form">
-        <input class="js-newTask">
+<body class="body">
+    <header>
+        <h1>Lista zadań</h1>
+    </header>
+
+
+
+
+<section class="section">
+    <h2 class="section__header">Dodaje nowe zadanie</h2>
+<div class="section__from">
+    <form class="js-form form">
+        <input class="js-newTask" placeholder="Co jest do zrobienia?" required autofocus>
         <button>Dodaj zadanie</button>
     </form>
+</div>
+</section>
 
-    <ul class="js-tasks list__item"> </ul>
+
+
+
+<section class="section">
+    <h2 class="section__header">Lista zadań</h2>  
+    <div class="section__body">
+        <ul class="js-tasks list"> </ul>
+    </div>
+
+</section>
 
 </body>
 
